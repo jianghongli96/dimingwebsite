@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文章管理 - 镝鸣科技 CMS</title>
+    <link rel="stylesheet" href="/assets/cms.css" />
+  </head>
+  <body>
+    <header class="admin-header">
+      <div class="brand-row">
+        <span class="brand-mark">D</span>
+        <div>
+          <strong>镝鸣科技 CMS</strong>
+          <p>行业热点文章管理</p>
+        </div>
+      </div>
+      <button id="logout-button" class="ghost-button" type="button">退出登录</button>
+    </header>
+
+    <main class="admin-page">
+      <section class="list-panel">
+        <div class="page-title-row">
+          <div>
+            <h1>文章列表</h1>
+            <p>管理官网“行业热点”栏目中的文章内容。</p>
+          </div>
+          <a class="primary-link" href="/admin/articles/new">创建文章</a>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <div class="table-wrap">
+          <table class="article-table">
+            <thead>
+              <tr>
+                <th>标题</th>
+                <th>分类</th>
+                <th>状态</th>
+                <th>更新时间</th>
+                <th>URL 标识</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody id="article-list"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="/assets/admin.js"></script>
+  </body>
+</html>

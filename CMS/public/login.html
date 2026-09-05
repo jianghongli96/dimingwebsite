@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>管理员登录 - 镝鸣科技 CMS</title>
+    <link rel="stylesheet" href="/assets/cms.css" />
+  </head>
+  <body class="login-page">
+    <main class="login-card">
+      <div class="brand-row">
+        <span class="brand-mark">D</span>
+        <div>
+          <strong>镝鸣科技 CMS</strong>
+          <p>行业热点文章管理后台</p>
+        </div>
+      </div>
+
+      <form id="login-form" class="login-form">
+        <label>
+          用户名
+          <input name="username" autocomplete="username" required />
+        </label>
+        <label>
+          密码
+          <input name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <button type="submit">登录后台</button>
+        <p id="message" class="message"></p>
+      </form>
+    </main>
+
+    <script src="/assets/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "diming-cms",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-sqlite server.js",
+    "start": "node --experimental-sqlite server.js"
+  },
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "volta": {
+    "node": "22.14.0"
+  }
+}

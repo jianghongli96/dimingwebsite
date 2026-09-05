@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文章编辑 - 镝鸣科技 CMS</title>
+    <link rel="stylesheet" href="/assets/cms.css" />
+  </head>
+  <body>
+    <header class="admin-header">
+      <div class="brand-row">
+        <span class="brand-mark">D</span>
+        <div>
+          <strong>镝鸣科技 CMS</strong>
+          <p>行业热点文章管理</p>
+        </div>
+      </div>
+      <button id="logout-button" class="ghost-button" type="button">退出登录</button>
+    </header>
+
+    <main class="admin-page">
+      <section class="editor-panel editor-panel--page">
+        <div class="page-title-row">
+          <div>
+            <a class="back-link" href="/admin">返回文章列表</a>
+            <h1 id="page-title">创建文章</h1>
+            <p id="page-description">填写文章内容后保存，URL 标识将由系统自动生成。</p>
+          </div>
+        </div>
+
+        <form id="article-form" class="article-form">
+          <input type="hidden" name="id" />
+
+          <label>
+            标题
+            <input name="title" required placeholder="请输入文章标题" />
+          </label>
+
+          <label>
+            摘要
+            <textarea name="summary" rows="3" placeholder="用于文章列表和 SEO 描述"></textarea>
+          </label>
+
+          <div class="form-grid">
+            <label>
+              分类
+              <input name="category" value="行业资讯" />
+            </label>
+            <label>
+              标签
+              <input name="tags" placeholder="半导体,AI,新能源" />
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              SEO 标题
+              <input name="seoTitle" placeholder="不填则默认使用文章标题" />
+            </label>
+            <label>
+              SEO 描述
+              <input name="seoDescription" placeholder="不填则默认使用文章摘要" />
+            </label>
+          </div>
+
+          <div class="editor-toolbar" aria-label="正文编辑工具栏">
+            <button type="button" data-command="bold">加粗</button>
+            <button type="button" data-command="insertUnorderedList">列表</button>
+            <button type="button" data-block="h2">二级标题</button>
+            <button type="button" data-block="p">正文</button>
+            <button type="button" data-command="justifyLeft">左对齐</button>
+            <button type="button" data-command="justifyCenter">居中</button>
+            <button type="button" data-command="justifyRight">右对齐</button>
+            <button type="button" data-command="justifyFull">两端对齐</button>
+            <button id="link-button" type="button">链接</button>
+            <label class="upload-button">
+              插入图片
+              <input id="image-input" type="file" accept="image/png,image/jpeg,image/gif,image/webp" hidden />
+            </label>
+          </div>
+
+          <div id="editor" class="editor" contenteditable="true" aria-label="文章正文编辑器"></div>
+
+          <div class="actions">
+            <select name="status">
+              <option value="draft">草稿</option>
+              <option value="published">发布</option>
+            </select>
+            <a class="secondary-link" href="/admin">取消</a>
+            <button type="submit">保存文章</button>
+          </div>
+
+          <p id="message" class="message"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/assets/article-form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+export const metrics = [
+  { value: '2024', label: '创立于临港' },
+  { value: '3+', label: '核心业务领域' },
+  { value: '100+', label: '技术方案沉淀' }
+]
+
+export const values = [
+  { icon: 'lightbulb', title: '创新驱动', text: '不断突破技术边界，将尖端 AI 算法转化为现实生产力。' },
+  { icon: 'verified', title: '高质量发展', text: '坚持工业级严苛标准，打造性能卓越、稳定可靠的智能方案。' },
+  { icon: 'handshake', title: '合作共赢', text: '与生态伙伴紧密协作，共建临港世界级科技创新高地。' }
+]
+
+export const serviceCards = [
+  {
+    icon: 'developer_board',
+    title: '半导体技术开发与咨询',
+    text: '覆盖先进制程工艺咨询、物理设计优化、封装测试质检与设备软件方案，帮助企业跨越工程化瓶颈。',
+    points: ['制程节点仿真与优化', '晶圆制造良率提升咨询', '封测质量智能检测']
+  },
+  {
+    icon: 'psychology',
+    title: '工业人工智能方案',
+    text: '面向制造现场的算法服务、预测性维护与端侧 AI 落地，推动生产数据从记录走向实时决策。',
+    points: ['机器视觉缺陷识别', '生产参数智能调优', '异构算力算法优化']
+  },
+  {
+    icon: 'settings_suggest',
+    title: '新能源控制系统优化',
+    text: '结合工业控制、传感与数据模型能力，为能源设备和电池管理系统提供稳定高效的技术支撑。',
+    points: ['BMS 策略优化', '实时控制逻辑研发', '生命周期数据分析']
+  }
+]
+
+export const sectorCards = [
+  {
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCpIldrK_Aq6Tm6wLbeMprGl1zoInvItvpD5dc3eSt7H7NY6w-3XqFSWB21jd5RErVYU0KPdG5Wo1LVzXO83vq_RB4o9WTW8Mgi9z0dkhc-gIICOaU61bNheGn6hZlb7pc5GQN39O6DwgYgbSe1GoDlU7lB8Lmj6kNg8uSUZZtE_Tp4YjBnYsc3vaRzA-ciLGxJQKVZEkt0dBH6F_SwHfQKrRmcL_NH_HkQqLgqW3UmUdQ33j43JPgF0WJdzZRqQoSBiiJY3K3JcY9Z',
+    title: '半导体产业',
+    text: '专注晶圆制造、封装测试与设备软件中的智能检测和良率提升方案，助力国产芯片产业升级。'
+  },
+  {
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBdGcnO-5ktCHwFwygu0n6QDX1zov_T4o-i-BzbD43qx2cIUDiBMC5rj9w8pSg6ilchOGpav_a_FfV-7103E73XaE2tbjJupGDIjY__viAjg950ekyxKaoTlJLSUqtEbRIdbLNr41fHNNpRrpFL_29nSC8cVWD_nEXVUbLd-KXsaa0uiMF-LXdqAX7NYOAiqqnnsUANpwVfD83GZ2XZZVVingSqJ7NWfaDaT52g1lVIR_vIxrj6H2mg8TAvsab3aTmtbMjK6iLTKggf',
+    title: '人工智能',
+    text: '开发定制化计算机视觉与深度学习模型，解决工业生产中的复杂自动化和智能决策难题。'
+  },
+  {
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAxFMo2yAA_zNpJzi7uisfw56CZ4vQbshy3Fc5r89C7y3_XSOuBDiWOEpZhGyanaxxGThAwPVQQlKMEXrEAwjwpozx-6jtmNmjSTabQYDyZ3hlOB9bNkhpV9BTVsCnnGStbaOr3pperMYOf2r0ckSHqR33Jq5OPkbmSQrQpxJ3m4vwrI7nzIiGdX8hxQiC1tLCc1RUi24VgjeZC2Tj2_Nk4nz9OEOjx3TjLYGpFr6hK1arDfyd6bFrpCrx5gjO9jNxaxmGbdQjn1k8Z',
+    title: '新能源',
+    text: '提供电池包管理系统(BMS)优化算法与能源互联网智慧管理平台服务。'
+  }
+]
+
+export const articles = [
+  {
+    tag: '技术分享',
+    date: '2024-03-20',
+    title: '半导体封测技术的智能化转型趋势',
+    summary: '先进封装与异构集成推动封测复杂度提升，AI 视觉质检正在成为良率提升的关键能力。',
+    image: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1400&q=80',
+    body: [
+      '半导体封测作为芯片制造的最后关键环节，其质量与效率直接决定最终产品的市场竞争力。随着摩尔定律趋于物理极限，先进封装与 Chiplet 成为技术演进的主战场。',
+      '传统依靠人工目检或固定规则的自动光学检测已难以应对日益精细化的缺陷识别需求。镝鸣科技围绕机器视觉、深度学习与工业数据闭环，为封测产线提供更高精度的质量分析方案。',
+      '智能化转型不仅是工具替代，更是生产模式革新。通过打通从晶圆到成品的全生命周期数据链，厂商可以更早识别良率波动并降低维护成本。'
+    ]
+  },
+  {
+    tag: '技术分享',
+    date: '2024-03-15',
+    title: '国产 EDA 软件的突围之路：挑战与机遇',
+    summary: '从算法效率、工程经验到产业协同，国产 EDA 需要在关键环节形成可验证的闭环能力。',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80',
+    body: [
+      'EDA 是半导体产业链中高度复杂的基础软件体系，既考验算法深度，也依赖长期工程积累。国产替代的关键并不只是补齐工具清单，而是建立可持续迭代的验证体系。',
+      'AI 正在为布局布线、时序收敛和功耗优化带来新的增益空间。通过数据驱动的启发式搜索和模型辅助决策，研发团队可以更快完成设计空间探索。',
+      '镝鸣科技关注 EDA 与先进制造工艺之间的协同，为企业提供从技术路线评估到工程落地验证的咨询支持。'
+    ]
+  },
+  {
+    tag: '行业资讯',
+    date: '2024-03-10',
+    title: '工业 AI 如何赋能新能源电池管理系统',
+    summary: '预测性维护、热管理优化与状态估计模型，让电池系统在更复杂的工况中保持稳定表现。',
+    image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1400&q=80',
+    body: [
+      '新能源设备的运行环境多变，传统控制策略在复杂工况下容易遇到精度与响应速度的双重挑战。工业 AI 为电池管理系统提供了更细粒度的状态感知能力。',
+      '通过融合传感数据、历史工况和物理模型，可以提升 SOC、SOH 估计稳定性，并提前识别潜在异常。',
+      '镝鸣科技以半导体与控制系统经验为基础，为新能源客户提供算法验证、系统调优与工程化咨询服务。'
+    ]
+  }
+]

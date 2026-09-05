@@ -1,0 +1,35 @@
+services:
+  cms:
+    build:
+      context: ./CMS
+    restart: unless-stopped
+    environment:
+      PORT: 4000
+      CMS_DATA_DIR: /data
+      CMS_UPLOAD_DIR: /uploads
+      CMS_SESSION_SECRET: ${CMS_SESSION_SECRET:-change-this-session-secret}
+      CMS_ADMIN_USER: ${CMS_ADMIN_USER:-admin}
+      CMS_ADMIN_PASSWORD: ${CMS_ADMIN_PASSWORD:-Diming@2026}
+    volumes:
+      - cms-data:/data
+      - cms-uploads:/uploads
+    ports:
+      - "${CMS_PORT:-4000}:4000"
+
+  website:
+    build:
+      context: ./website
+    restart: unless-stopped
+    depends_on:
+      - cms
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      NUXT_CMS_BASE_URL: http://cms:4000
+      NUXT_PUBLIC_CMS_PUBLIC_URL: ${CMS_PUBLIC_URL:-http://localhost:4000}
+    ports:
+      - "${WEBSITE_PORT:-3000}:3000"
+
+volumes:
+  cms-data:
+  cms-uploads:
