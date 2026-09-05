@@ -1,0 +1,65 @@
+name: Deploy to Aliyun
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-aliyun
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create deployment archive
+        run: |
+          tar \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.DS_Store' \
+            --exclude='website/node_modules' \
+            --exclude='website/.nuxt' \
+            --exclude='website/.output' \
+            --exclude='CMS/data' \
+            --exclude='CMS/uploads' \
+            -czf /tmp/dimingwebsite-deploy.tar.gz .
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.ALIYUN_SSH_KEY }}" > ~/.ssh/aliyun_key
+          chmod 600 ~/.ssh/aliyun_key
+          ssh-keyscan -p "${{ secrets.ALIYUN_PORT || 22 }}" "${{ secrets.ALIYUN_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Upload archive
+        run: |
+          scp \
+            -P "${{ secrets.ALIYUN_PORT || 22 }}" \
+            -i ~/.ssh/aliyun_key \
+            /tmp/dimingwebsite-deploy.tar.gz \
+            "${{ secrets.ALIYUN_USER }}@${{ secrets.ALIYUN_HOST }}:/tmp/dimingwebsite-deploy.tar.gz"
+
+      - name: Deploy on server
+        run: |
+          ssh \
+            -p "${{ secrets.ALIYUN_PORT || 22 }}" \
+            -i ~/.ssh/aliyun_key \
+            "${{ secrets.ALIYUN_USER }}@${{ secrets.ALIYUN_HOST }}" \
+            'set -e
+             DEPLOY_DIR=/var/www/dimingwebsite
+             mkdir -p "$DEPLOY_DIR" /var/lib/diming-cms/data /var/lib/diming-cms/uploads
+             if [ ! -f "$DEPLOY_DIR/.env" ]; then
+               echo "Missing $DEPLOY_DIR/.env. Create it on the server before deploying." >&2
+               exit 1
+             fi
+             tar -xzf /tmp/dimingwebsite-deploy.tar.gz -C "$DEPLOY_DIR"
+             cd "$DEPLOY_DIR"
+             docker compose up -d --build
+             docker compose ps'

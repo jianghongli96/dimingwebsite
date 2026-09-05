@@ -101,8 +101,17 @@ useHead({
           </aside>
         </div>
 
-        <div v-else class="empty-article glass-card">
-          <h2>暂无已发布文章</h2>
+        <div v-else class="empty-article">
+          <div class="empty-article__icon">
+            <span class="material-symbols-outlined">article</span>
+          </div>
+          <span class="empty-article__eyebrow">Insights</span>
+          <h2>行业热点正在整理中</h2>
+          <p>新的技术观察和产业动态会在发布后显示在这里。</p>
+          <NuxtLink class="button button--primary empty-article__link" to="/services">
+            查看业务领域
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </NuxtLink>
         </div>
       </div>
     </section>
