@@ -88,6 +88,34 @@ useHead({
             </div>
           </article>
         </div>
+
+        <article class="sector-consulting glass-card">
+          <div class="sector-consulting__header">
+            <span class="material-symbols-outlined">business_center</span>
+            <div>
+              <h3>企业经营赋能咨询</h3>
+              <p>围绕战略、组织、流程、人才与运营效率，帮助企业建立更清晰、更可执行的经营管理体系。</p>
+            </div>
+          </div>
+
+          <div class="sector-consulting__grid">
+            <div>
+              <span class="material-symbols-outlined">account_tree</span>
+              <h4>战略与组织重塑</h4>
+              <p>锚定企业发展定位，优化组织权责架构，破除协同壁垒，提升组织决策与执行效能。</p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined">schema</span>
+              <h4>流程与体系构建</h4>
+              <p>梳理核心业务链路，精简冗余节点，搭建标准化管理制度，实现经营可控、管理规范。</p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined">groups</span>
+              <h4>人才与运营提效</h4>
+              <p>搭建科学激励机制，激活组织人才潜力；优化运营模式，严控成本，持续放大经营收益。</p>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   </main>
