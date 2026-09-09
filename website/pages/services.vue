@@ -82,7 +82,7 @@ useHead({
       </div>
     </section>
 
-    <section class="banner">
+    <!-- <section class="banner">
       <div class="container banner__inner">
         <div>
           <h2>立足临港科创高地</h2>
@@ -94,7 +94,7 @@ useHead({
           <strong>专注前沿技术突破</strong>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="management-consulting">
       <div class="container">
