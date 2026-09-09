@@ -2,7 +2,7 @@
 
 当前项目可以用 GitHub Actions 自动部署到阿里云服务器。流程是：
 
-1. push 到 `main` 分支。
+1. push 到 `dev` 分支。
 2. GitHub Actions 打包当前代码。
 3. 通过 SSH 上传到服务器 `/tmp/dimingwebsite-deploy.tar.gz`。
 4. 解压到 `/var/www/dimingwebsite`。
@@ -52,7 +52,7 @@ ALIYUN_SSH_KEY=用于 ssh aliyun 的私钥内容
 
 ## 手动触发
 
-除了 push 到 `main` 自动部署，也可以在 GitHub：
+除了 push 到 `dev` 自动部署，也可以在 GitHub：
 
 ```txt
 Actions -> Deploy to Aliyun -> Run workflow
