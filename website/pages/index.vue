@@ -89,16 +89,16 @@ useHead({
     <section class="landing-services">
       <div class="container">
         <div class="section-heading">
-          <h2>技术研发、方案咨询、产品配套一体化服务</h2>
+          <h2>技术研发、方案咨询、产品配套、经营赋能一体化服务</h2>
           <p>从技术研发到商业落地的全方位支持，助力企业在工业 4.0 时代实现质的飞跃。</p>
         </div>
 
         <div class="service-layout service-layout--home">
-          <article class="service-feature glass-card">
-            <span class="tag">核心业务</span>
+          <article class="service-card">
+            <span class="material-symbols-outlined">engineering</span>
             <h3>全流程技术研发与攻关</h3>
             <p>提供定制化半导体设备软件方案、工业自动化系统架构设计及新能源控制逻辑研发咨询服务。</p>
-            <ul>
+            <ul class="check-list">
               <li><span class="material-symbols-outlined">check_circle</span>高性能工业软件架构设计</li>
               <li><span class="material-symbols-outlined">check_circle</span>异构计算平台算法优化</li>
               <li><span class="material-symbols-outlined">check_circle</span>实时控制系统国产化替代</li>
@@ -115,6 +115,12 @@ useHead({
             <span class="material-symbols-outlined">hub</span>
             <h3>精密产品适配</h3>
             <p>依托深厚行业资源，为客户提供精准的核心电子元器件选型建议与高端设备配套技术支撑。</p>
+          </article>
+
+          <article class="service-card">
+            <span class="material-symbols-outlined">business_center</span>
+            <h3>企业经营赋能</h3>
+            <p>深度诊断企业经营痛点，提供定制化管理方案与落地辅导。</p>
           </article>
         </div>
       </div>

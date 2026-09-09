@@ -473,26 +473,13 @@ a {
   z-index: 1;
 }
 
-.service-layout--home {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+.service-layout.service-layout--home {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
 }
 
-.service-layout--home .service-card:nth-child(2) {
-  background: var(--primary);
-  color: #fff;
-}
-
-.service-layout--home .service-card:nth-child(2) > .material-symbols-outlined {
-  background: rgba(71, 214, 255, 0.16);
-  color: var(--cyan-bright);
-}
-
-.service-layout--home .service-card:nth-child(2) h3 {
-  color: #fff;
-}
-
-.service-layout--home .service-card:nth-child(2) p {
-  color: #c4c6d0;
+.service-layout.service-layout--home .service-card {
+  min-height: 300px;
 }
 
 .about-hero {
@@ -766,7 +753,7 @@ a {
 }
 
 .section-heading {
-  max-width: 760px;
+  /* max-width: 760px; */
   margin: 0 auto 52px;
   text-align: center;
 }

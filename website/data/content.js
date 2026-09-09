@@ -1,7 +1,7 @@
 export const metrics = [
-  { value: '2024', label: '创立于临港' },
-  { value: '3+', label: '核心业务领域' },
-  { value: '100+', label: '技术方案沉淀' }
+  { value: '两大', label: '核心业务领悟' },
+  { value: '100+', label: '落地项目经验' },
+  { value: '100+', label: '产业链合作伙伴' }
 ]
 
 export const values = [
