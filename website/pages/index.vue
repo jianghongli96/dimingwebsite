@@ -15,7 +15,7 @@ useHead({
     <section class="hero">
       <div class="hero__media" aria-hidden="true">
         <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3mhyus6YszFekfc968BsOHoRD6JFAoWOZYwe2lIzfEITjqfr0wV3KRgXpPG3K3tXWb5lGroHPLHo2tn02Uz2iNzrdm1F3i02iwXbhwGNG-kdJQwaq1sWGqInTRqPEPFwUA5o99Jxor8OsOHU7P01_VltrmSQijl-NixfEfMNKXZWGbp6JIEfy4DG_-16yz4YGJz_kKoAlfKHYyFpwghMijjerDkCZb8Pm9heNqBtoWmETMaxdc1LqI1Vbn_ly1gRkzPpLD_2m6tsx"
+          src="/assets/images/image-01-cd5d3f6df5.png"
           alt=""
         />
         <div class="hero__overlay"></div>
@@ -54,7 +54,7 @@ useHead({
       <div class="container two-column">
         <div class="image-stack">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiY4v3b-A11zFTQqVj34Zb4O1ZKZb4iqCioGTuJ5d2u7lEvYh_rUr6suORGieO-S-r_4RdBq0o5eGnAuxpnjR8lYLXiEuwhXC2Drj4Tqt76E8lqVXPG_6PS7XbNgma4jyzovnwkfsyy7VXyTZaq5O5nU-iREDde9gdE3nnlCvt0e2MZmRbJkpQoOtkGnTpOQOBg3hg-zrYVBEJDrq-SFTaBtKizGSkgCDHof-0cd5beyZihboYU6wRZuQYxEOFFJXRfJvT_ZgwsN49"
+            src="/assets/images/image-02-8e064291c2.png"
             alt="上海临港创新中心"
           />
           <div class="location-card glass-card">

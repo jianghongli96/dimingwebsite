@@ -16,7 +16,7 @@ useHead({
   <main class="page-shell">
     <section class="about-hero about-hero--image">
       <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV0NBXyIcU-FJbUxHezeFKVkEocrQPFUq1mQ2q1v5pAOQg0EvVQxL81dD2W953Lp5tppTorhpxuPcrP80uv_VjZZqZbKXzTY4ZSaByxMKRQAwabEardLozECTaYAXw42mpUcq74MW5htPVpXeFolMTwTyNSNvVLIIlDQYY0HXE7K_6SqrrbKPosK6loKPJZQEPs0py6-QiWwwEpKSGyz2hVEKJUR5QJ3CCj-na_T1v-97m57-143bVDPg_laTuBIMH7eCqDHmmUHV0"
+        src="/assets/images/image-03-bcb359c9f2.png"
         alt=""
       />
       <div class="about-hero__overlay"></div>
@@ -31,7 +31,7 @@ useHead({
       <div class="container two-column">
         <div class="image-stack">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSNwvBuU5u9oqYyZVZCKfmCWpmBzJq_82fwutkEXKZjjffnNIqw1gOP_Adynp7eJwSoh01wCNvawKUuxyMrFE5tXHoa1PaGIrlqX0q3LP9PNRJZmeezZMLnIZod8bWPATlGlkzozfZqyJGGOa_gPKQmJsfDtT0zqFckUNLZWJWCT07S4QzPJgVMCin2Z4trbR3ljjeYXeHqvuaCgENt0u4kaPj9oyR-BOBsc96J_BH-Rtt25Dr0e4LKiWCSX5j-71L1bOMLSeYKNB-"
+            src="/assets/images/image-04-15a0a8764b.png"
             alt="芯片与电路研发场景"
           />
           <div class="location-card glass-card">

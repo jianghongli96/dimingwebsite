@@ -33,17 +33,17 @@ export const serviceCards = [
 
 export const sectorCards = [
   {
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCpIldrK_Aq6Tm6wLbeMprGl1zoInvItvpD5dc3eSt7H7NY6w-3XqFSWB21jd5RErVYU0KPdG5Wo1LVzXO83vq_RB4o9WTW8Mgi9z0dkhc-gIICOaU61bNheGn6hZlb7pc5GQN39O6DwgYgbSe1GoDlU7lB8Lmj6kNg8uSUZZtE_Tp4YjBnYsc3vaRzA-ciLGxJQKVZEkt0dBH6F_SwHfQKrRmcL_NH_HkQqLgqW3UmUdQ33j43JPgF0WJdzZRqQoSBiiJY3K3JcY9Z',
+    image: '/assets/images/image-08-c786038286.png',
     title: '半导体产业',
     text: '专注晶圆制造、封装测试与设备软件中的智能检测和良率提升方案，助力国产芯片产业升级。'
   },
   {
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBdGcnO-5ktCHwFwygu0n6QDX1zov_T4o-i-BzbD43qx2cIUDiBMC5rj9w8pSg6ilchOGpav_a_FfV-7103E73XaE2tbjJupGDIjY__viAjg950ekyxKaoTlJLSUqtEbRIdbLNr41fHNNpRrpFL_29nSC8cVWD_nEXVUbLd-KXsaa0uiMF-LXdqAX7NYOAiqqnnsUANpwVfD83GZ2XZZVVingSqJ7NWfaDaT52g1lVIR_vIxrj6H2mg8TAvsab3aTmtbMjK6iLTKggf',
+    image: '/assets/images/image-09-f0b76a78a6.png',
     title: '人工智能',
     text: '开发定制化计算机视觉与深度学习模型，解决工业生产中的复杂自动化和智能决策难题。'
   },
   {
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAxFMo2yAA_zNpJzi7uisfw56CZ4vQbshy3Fc5r89C7y3_XSOuBDiWOEpZhGyanaxxGThAwPVQQlKMEXrEAwjwpozx-6jtmNmjSTabQYDyZ3hlOB9bNkhpV9BTVsCnnGStbaOr3pperMYOf2r0ckSHqR33Jq5OPkbmSQrQpxJ3m4vwrI7nzIiGdX8hxQiC1tLCc1RUi24VgjeZC2Tj2_Nk4nz9OEOjx3TjLYGpFr6hK1arDfyd6bFrpCrx5gjO9jNxaxmGbdQjn1k8Z',
+    image: '/assets/images/image-10-786328af1c.png',
     title: '新能源',
     text: '提供电池包管理系统(BMS)优化算法与能源互联网智慧管理平台服务。'
   }
@@ -55,7 +55,7 @@ export const articles = [
     date: '2024-03-20',
     title: '半导体封测技术的智能化转型趋势',
     summary: '先进封装与异构集成推动封测复杂度提升，AI 视觉质检正在成为良率提升的关键能力。',
-    image: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1400&q=80',
+    image: '/assets/images/image-11-7fd25bab8d.jpg',
     body: [
       '半导体封测作为芯片制造的最后关键环节，其质量与效率直接决定最终产品的市场竞争力。随着摩尔定律趋于物理极限，先进封装与 Chiplet 成为技术演进的主战场。',
       '传统依靠人工目检或固定规则的自动光学检测已难以应对日益精细化的缺陷识别需求。镝鸣科技围绕机器视觉、深度学习与工业数据闭环，为封测产线提供更高精度的质量分析方案。',
@@ -67,7 +67,7 @@ export const articles = [
     date: '2024-03-15',
     title: '国产 EDA 软件的突围之路：挑战与机遇',
     summary: '从算法效率、工程经验到产业协同，国产 EDA 需要在关键环节形成可验证的闭环能力。',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80',
+    image: '/assets/images/image-12-e6bfd947d8.jpg',
     body: [
       'EDA 是半导体产业链中高度复杂的基础软件体系，既考验算法深度，也依赖长期工程积累。国产替代的关键并不只是补齐工具清单，而是建立可持续迭代的验证体系。',
       'AI 正在为布局布线、时序收敛和功耗优化带来新的增益空间。通过数据驱动的启发式搜索和模型辅助决策，研发团队可以更快完成设计空间探索。',
@@ -79,7 +79,7 @@ export const articles = [
     date: '2024-03-10',
     title: '工业 AI 如何赋能新能源电池管理系统',
     summary: '预测性维护、热管理优化与状态估计模型，让电池系统在更复杂的工况中保持稳定表现。',
-    image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1400&q=80',
+    image: '/assets/images/image-13-b4b7c11888.jpg',
     body: [
       '新能源设备的运行环境多变，传统控制策略在复杂工况下容易遇到精度与响应速度的双重挑战。工业 AI 为电池管理系统提供了更细粒度的状态感知能力。',
       '通过融合传感数据、历史工况和物理模型，可以提升 SOC、SOH 估计稳定性，并提前识别潜在异常。',

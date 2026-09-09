@@ -25,7 +25,7 @@ useHead({
         <div class="services-hero__media">
           <div class="services-hero__frame glass-card">
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYqPKF260pYVnuWoRKgM6P_beqGiQcPHUbjd2ql_wdaSsC-naM5Y-am1kLHIvWbHmj11Xbr6Exdao1w7aiZOVxHBw3fH020Y2ngGYDbr6OMdKAKu9frQ0Ma98MrUEU2-JYOM405Xt1uLGJhUDKVjDCQypTAcXU8NcRM6P4JptKoauPkiPU_XuBO5QJLKbTWg-3TOwhn5ir8Det5vPvLRja-glQ0p_st8JNLveJ69CvhBA-5sD3L8JqH0lvC6lfNHGTXsw15Kh0bmnE"
+              src="/assets/images/image-05-0c250ed0bc.png"
               alt="半导体晶圆"
             />
           </div>
@@ -50,7 +50,7 @@ useHead({
               <li><span class="material-symbols-outlined">check_circle</span>晶圆制造良率提升咨询</li>
             </ul>
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCln-D_bjOlYgiZWx3tuEKDe_WL_i7WzOBwtEkR-Y507lUeRZwZpBhgNBqcmc1Fco8gEdDigHEPqdvlKk4ZL35I9LGmIguAEpmPT1wqaOlpAp-gHGBlZnSJ4Q0N8EZorObht86_PAdr5pgWPdEalflbnDokq-O8GDMN_7sWqcnNzBz0B3Iui9S168N1pW8yrc1OyXOCXHoVAr7bo2vr5NvV5HrVLRkeGm2jrDN4KdxczyyxEl1hsmclFO624NLBdUS9IMiVRn7t6LD"
+              src="/assets/images/image-06-196340c294.png"
               alt="半导体研发"
             />
           </article>
@@ -129,7 +129,7 @@ useHead({
       <div class="container service-contact__grid">
         <div class="service-contact__map glass-card">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiNslFUR-5h9cuD-yYAwLj8V9NHFwfJIEwW5pwz8Z_yUppLP9N_zSqNUOOCfFmhMql3L26UY6OEMqA1VM6UypB6tzd5Y52zIUdjhtleq4OaJ78R7UHY32itDZVdMamCfGb3ysl-3YsO717fEkgCmu04KkiAdng5Y14JIhG1c43rb1rlWi-VWrXWiCKQCSeLejCdGuxO3KtXA9UI-n0H_YLdQWlWRWF1vOpgPKHD-h5tA53wCecoqFeP6i8H-INGgM2btxmn3yRTHLg"
+            src="/assets/images/image-07-6c4c964275.png"
             alt="上海临港"
           />
         </div>
