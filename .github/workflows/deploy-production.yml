@@ -36,22 +36,22 @@ jobs:
           mkdir -p ~/.ssh
           printf '%s\n' "${{ secrets.DIMING_SSH_KEY }}" > ~/.ssh/aliyun_key
           chmod 600 ~/.ssh/aliyun_key
-          ssh-keyscan -p "${{ vars.ALIYUN_PORT || 22 }}" "${{ vars.ALIYUN_HOST }}" >> ~/.ssh/known_hosts
+          ssh-keyscan -p "${{ vars.DIMING_PORT || 22 }}" "${{ vars.DIMING_HOST }}" >> ~/.ssh/known_hosts
 
       - name: Upload archive
         run: |
           scp \
-            -P "${{ vars.ALIYUN_PORT || 22 }}" \
+            -P "${{ vars.DIMING_PORT || 22 }}" \
             -i ~/.ssh/aliyun_key \
             /tmp/dimingwebsite-deploy.tar.gz \
-            "${{ vars.ALIYUN_USER }}@${{ vars.ALIYUN_HOST }}:/tmp/dimingwebsite-deploy.tar.gz"
+            "${{ vars.DIMING_USER }}@${{ vars.DIMING_HOST }}:/tmp/dimingwebsite-deploy.tar.gz"
 
       - name: Deploy on server
         run: |
           ssh \
-            -p "${{ vars.ALIYUN_PORT || 22 }}" \
+            -p "${{ vars.DIMING_PORT || 22 }}" \
             -i ~/.ssh/aliyun_key \
-            "${{ vars.ALIYUN_USER }}@${{ vars.ALIYUN_HOST }}" \
+            "${{ vars.DIMING_USER }}@${{ vars.DIMING_HOST }}" \
             'set -e
              DEPLOY_DIR=/var/www/dimingwebsite
              mkdir -p "$DEPLOY_DIR" /var/lib/diming-cms/data /var/lib/diming-cms/uploads
