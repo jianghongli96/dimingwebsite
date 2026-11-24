@@ -213,12 +213,13 @@ async function handleAdminArticleSave(req, res, id) {
   const now = new Date().toISOString()
   const title = String(body.title || '').trim()
   const status = body.status === 'published' ? 'published' : 'draft'
-  const publishedAt = status === 'published' ? body.publishedAt || now : null
-
   if (!title) return json(res, 400, { error: '标题不能为空' })
 
-  const existingArticle = id ? db.prepare('SELECT slug FROM articles WHERE id = ?').get(id) : null
+  const existingArticle = id
+    ? db.prepare('SELECT slug, published_at FROM articles WHERE id = ?').get(id)
+    : null
   const slug = existingArticle?.slug || createUniqueSlug(slugify(title) || createFallbackSlug(), id)
+  const publishedAt = existingArticle?.published_at || (status === 'published' ? now : null)
 
   const values = {
     title,

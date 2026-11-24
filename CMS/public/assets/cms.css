@@ -258,6 +258,22 @@ select:focus,
   font-weight: 800;
 }
 
+.article-table th:nth-child(2),
+.article-table td:nth-child(2) {
+  width: 96px;
+  min-width: 96px;
+  max-width: 96px;
+  white-space: nowrap;
+}
+
+.article-table th:nth-child(4),
+.article-table td:nth-child(4) {
+  width: 112px;
+  min-width: 112px;
+  max-width: 112px;
+  white-space: nowrap;
+}
+
 .article-table tr:last-child td {
   border-bottom: 0;
 }
@@ -315,14 +331,18 @@ select:focus,
 
 .table-actions {
   display: flex;
+  min-width: 118px;
   gap: 10px;
   align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .table-link,
 .table-danger,
 .secondary-link {
   display: inline-flex;
+  flex: 0 0 auto;
   min-height: 36px;
   align-items: center;
   justify-content: center;
