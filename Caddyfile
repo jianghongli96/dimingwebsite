@@ -1,0 +1,11 @@
+diming.net.cn {
+    reverse_proxy website:3000
+}
+
+cms.diming.net.cn {
+    reverse_proxy cms:4000
+}
+
+http://47.93.124.16 {
+    reverse_proxy website:3000
+}
