@@ -49,10 +49,10 @@ const mobileMenuOpen = ref(false)
       </nav>
       <div>
         <h3>联系我们</h3>
-        <p><span class="material-symbols-outlined">mail</span>business@diming-tech.com</p>
+        <p><span class="material-symbols-outlined">mail</span>business@diming.net.cn</p>
         <p><span class="material-symbols-outlined">location_on</span>上海市浦东新区临港新片区</p>
       </div>
     </div>
-    <div class="container footer__bottom">© 2024 上海镝鸣信息科技有限公司 版权所有 | 沪ICP备XXXXXXXX号</div>
+    <div class="container footer__bottom">© 2024 上海镝鸣信息科技咨询有限公司 版权所有 | 沪ICP备2026063364号</div>
   </footer>
 </template>
