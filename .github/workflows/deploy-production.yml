@@ -62,5 +62,5 @@ jobs:
              fi
              tar -xzf /tmp/dimingwebsite-deploy.tar.gz -C "$DEPLOY_DIR"
              cd "$DEPLOY_DIR"
-             docker compose up -d --build
-             docker compose ps'
+             docker compose -f docker-compose.yml -f docker-compose.domain.yml up -d --build
+             docker compose -f docker-compose.yml -f docker-compose.domain.yml ps

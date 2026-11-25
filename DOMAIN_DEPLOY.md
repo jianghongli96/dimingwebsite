@@ -87,6 +87,13 @@ docker compose -f docker-compose.yml -f docker-compose.domain.yml up -d --build
 
 不要执行 `docker compose down -v`。
 
+## 查询证书到期时间
+
+```bash
+echo | openssl s_client -connect diming.net.cn:443 -servername diming.net.cn 2>/dev/null \
+  | openssl x509 -noout -dates
+```
+
 ## 回退到 IP 访问
 
 ```bash

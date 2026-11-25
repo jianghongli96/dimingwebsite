@@ -53,6 +53,10 @@ const mobileMenuOpen = ref(false)
         <p><span class="material-symbols-outlined">location_on</span>上海市浦东新区临港新片区</p>
       </div>
     </div>
-    <div class="container footer__bottom">© 2024 上海镝鸣信息科技咨询有限公司 版权所有 | 沪ICP备2026063364号</div>
+    <div class="container footer__bottom">© 2024 上海镝鸣信息科技咨询有限公司 版权所有 | 
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" style="text-decoration: none;">
+        沪ICP备2026063364号-1
+      </a>
+      </div>
   </footer>
 </template>
